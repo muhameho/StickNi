@@ -105,7 +105,7 @@
             lblAppName.AutoSize = true;
             lblAppName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAppName.ForeColor = Color.Coral;
-            lblAppName.Location = new Point(24, 5);
+            lblAppName.Location = new Point(25, 5);
             lblAppName.Name = "lblAppName";
             lblAppName.Size = new Size(51, 17);
             lblAppName.TabIndex = 4;
