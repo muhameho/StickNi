@@ -37,6 +37,7 @@
             btnMinimize = new Button();
             btnClose = new Button();
             pnlBottom = new Panel();
+            pbGithub = new PictureBox();
             btnLeftToRight = new Button();
             btnRightToLeft = new Button();
             pnlBackColor = new Panel();
@@ -51,16 +52,15 @@
             pnlTopLine = new Panel();
             pnlBottomLine = new Panel();
             rtbText = new RichTextBox();
-            pbGithub = new PictureBox();
             pnlHeaderControls.SuspendLayout();
             pnlHeaderLeftControls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbAppIcon).BeginInit();
             pnlHeaderRightControls.SuspendLayout();
             pnlBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbGithub).BeginInit();
             pnlBackColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbBackColor).BeginInit();
             pnlBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbGithub).BeginInit();
             SuspendLayout();
             // 
             // pnlHeaderControls
@@ -105,7 +105,7 @@
             lblAppName.AutoSize = true;
             lblAppName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAppName.ForeColor = Color.Coral;
-            lblAppName.Location = new Point(24, 3);
+            lblAppName.Location = new Point(24, 5);
             lblAppName.Name = "lblAppName";
             lblAppName.Size = new Size(51, 17);
             lblAppName.TabIndex = 4;
@@ -170,6 +170,19 @@
             pnlBottom.Name = "pnlBottom";
             pnlBottom.Size = new Size(340, 31);
             pnlBottom.TabIndex = 2;
+            // 
+            // pbGithub
+            // 
+            pbGithub.Cursor = Cursors.Hand;
+            pbGithub.Dock = DockStyle.Left;
+            pbGithub.Image = (Image)resources.GetObject("pbGithub.Image");
+            pbGithub.Location = new Point(160, 0);
+            pbGithub.Name = "pbGithub";
+            pbGithub.Size = new Size(31, 31);
+            pbGithub.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbGithub.TabIndex = 6;
+            pbGithub.TabStop = false;
+            pbGithub.Click += pbGithub_Click;
             // 
             // btnLeftToRight
             // 
@@ -371,19 +384,6 @@
             rtbText.Text = "";
             rtbText.KeyDown += rtbText_KeyDown;
             // 
-            // pbGithub
-            // 
-            pbGithub.Cursor = Cursors.Hand;
-            pbGithub.Dock = DockStyle.Left;
-            pbGithub.Image = (Image)resources.GetObject("pbGithub.Image");
-            pbGithub.Location = new Point(160, 0);
-            pbGithub.Name = "pbGithub";
-            pbGithub.Size = new Size(31, 31);
-            pbGithub.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbGithub.TabIndex = 6;
-            pbGithub.TabStop = false;
-            pbGithub.Click += pbGithub_Click;
-            // 
             // StickNi
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -413,10 +413,10 @@
             pnlHeaderRightControls.ResumeLayout(false);
             pnlBottom.ResumeLayout(false);
             pnlBottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbGithub).EndInit();
             pnlBackColor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbBackColor).EndInit();
             pnlBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbGithub).EndInit();
             ResumeLayout(false);
         }
 
