@@ -6,7 +6,22 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>notes.ico</ApplicationIcon>
+    <Copyright>@muhameho</Copyright>
+    <PackageIcon>notes.png</PackageIcon>
+    <RepositoryUrl>https://github.com/muhameho/StickNi</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="notes.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\notes.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
